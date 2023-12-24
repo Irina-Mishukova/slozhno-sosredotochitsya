@@ -38,12 +38,40 @@
   color: var(--accent-color);
 }
 
+
 .header__title {
   color: var(--header-title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
 }
 
 button {
   background-color: transparent;
   border: none;
+}
+
+
+
+@media (width >= 768px) {
+  .header { 
+  padding: 20px;
+}
+}
+
+@media (width < 768px) {
+  .header { 
+  padding: 10px;
+}
+}
+
+@media (width < 768px) {
+  .header__title {
+    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  }
+}
+
+@media (width >= 768px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
