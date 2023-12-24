@@ -38,13 +38,22 @@
   color: var(--accent-color);
 }
 
+.header__theme-menu-list {
+  display: grid;
+  gap: 13px;
+  justify-content: end;
+}
+
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
+  line-height: 100%;
+  text-align: center;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  /* outline-offset: 1px ; */
   cursor: pointer;
 }
 
@@ -56,11 +65,20 @@
   border-block-end: 1px solid var(--accent-color);
 }
 
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+  pointer-events: none
+  /* outline-offset: 1px ; */
+}
 
 .header__title {
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 82.5%;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
 }
 
 
