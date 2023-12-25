@@ -99,12 +99,22 @@
 
 .list__paragraph {
   color: var(--text-color);
+  margin-block-end: 20px;
 }
 
+/* li.list__paragraph:not(:last-child) {
+  margin-block-end: 20px;
+} */
+
 .main_content {
-  display: grid;
   margin-inline: 10px;
   margin-block-end: 50px;
+}
+
+.advice {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
 
