@@ -99,12 +99,11 @@
 
 .list__paragraph {
   color: var(--text-color);
-  margin-block-end: 20px;
 }
 
-/* li.list__paragraph:not(:last-child) {
+.content__list li:not(:last-child) {
   margin-block-end: 20px;
-} */
+} 
 
 .main_content {
   margin-inline: 10px;
