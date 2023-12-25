@@ -120,10 +120,8 @@
   display: grid;
 }
 
-/* .problems .content__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+/* .list__title h5 {
+  font-weight: 400;
 } */
 
 @media (width >= 768px) {
