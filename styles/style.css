@@ -124,6 +124,10 @@
   font-weight: 400;
 } */
 
+.problems .content__title {
+  max-width: 315px;
+}
+
 @media (width >= 768px) {
   .header { 
   padding: 20px;
@@ -163,3 +167,9 @@
     gap: 20px;
   }
 }
+
+@media (768px <= width < 1024px) {
+  .problems .content__title {
+    max-width: 237px;
+  }
+  }
