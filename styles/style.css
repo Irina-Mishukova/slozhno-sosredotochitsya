@@ -4,6 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
   background-color: var(--bg-color);
+  line-height: 130%;
 }
 
 .header { 
@@ -132,6 +133,10 @@
   font-weight: 400;
 }
 
+.advice_list .content__list {
+  margin-block-start: 20px;
+}
+
 @media (width >= 768px) {
   .header { 
   padding: 20px;
@@ -160,7 +165,7 @@
 @media (width >= 768px) {
   .about_focus, .advice {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 10px;
   }
 }
 
