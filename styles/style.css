@@ -42,6 +42,7 @@
 
 .header__theme-menu {
   color: var(--accent-color);
+  padding-block-start: 40px;
 }
 
 .header__theme-menu-list {
