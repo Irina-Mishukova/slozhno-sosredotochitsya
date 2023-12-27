@@ -175,8 +175,12 @@
 } */
 
 .footer {
-  margin-block: 10px;
-  margin-inline: 10px;
+  display: flex;
+  padding-block-end: 10px;
+  padding-inline: 10px;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4/3;
 }
 .footer.header__title {
   text-shadow: 2px 2px 0px var(--accent-color);
