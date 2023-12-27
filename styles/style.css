@@ -9,6 +9,7 @@
 
 .header { 
   padding: 10px;
+  display: grid;
 }
 
 .decorated-element {
@@ -87,6 +88,7 @@
   margin-block-end: 55px;
   /* width: maxmin(355px, 364px, 491px); */
   width: min(100%, 491px);
+  justify-self: end;
   /* width: max(100%, 355px) */
 }
 
