@@ -132,7 +132,19 @@
 .list__paragraph a {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
-  
+}
+
+.list__paragraph a:hover {
+  border-block-end: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.list__paragraph a:focus {
+  outline: none;
+}
+
+.list__paragraph a:focus-visible {
+  border: 1px solid var(--text-color);
 }
 
 .content__title {
