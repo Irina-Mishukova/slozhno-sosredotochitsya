@@ -94,6 +94,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 82.5%;
   margin-block-end: 55px;
+  margin-block-start: 66px;
 }
 
 .header__paragraph {
@@ -285,8 +286,12 @@
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-block-end: 162px;
+    margin-block-start: 174px;
   }
 }
+
+
 
 @media (width >= 768px) {
   .main_content {
