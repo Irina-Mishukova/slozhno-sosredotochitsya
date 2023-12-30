@@ -129,6 +129,12 @@
   bottom: 0;  
 }
 
+.list__paragraph a {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  
+}
+
 .content__title {
   color: var(--accent-color);
   font-size: 18px;
