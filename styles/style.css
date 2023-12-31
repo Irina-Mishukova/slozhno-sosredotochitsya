@@ -163,8 +163,6 @@
   color: var(--text-color);
 }
 
-
-
 .content__list li:not(:last-child) {
   margin-block-end: 20px;
 } 
@@ -414,5 +412,12 @@ footer .header__title::after {
   .header__paragraph {
     margin-block-end: 114px;
   
+  }
+}
+
+@media (width >= 768px) {
+  .footer {
+    margin-block-end: 20px;
+    margin-inline: 20px;
   }
 }
