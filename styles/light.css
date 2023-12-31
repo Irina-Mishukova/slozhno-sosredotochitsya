@@ -16,16 +16,18 @@
   --bg-color: #FFF1F7;
   --text-color: #353430;
   --header-title-color: #FFC2E6;
+  --list-title-color: #353430;
 }
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-  /* background-color: var(--bg-color);
-  line-height: 130%; */
   background-image: url(../images/cover-image-light.png);
-  /* background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
+
+.decorated-element_text {
+  display: none;
+}
+
+.decorated-element_corner::after {
+ display: none;
+} 
