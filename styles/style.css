@@ -178,12 +178,8 @@
   gap: 50px;
 }
 
-.problems {
-  /* display: grid; */
-}
-
-.problems .content__title {
-  /* max-width: 315px; */
+.heading, .content__title {
+  padding-block-end: 20px;
 }
 
 .advice_list .content__list .list__title {
