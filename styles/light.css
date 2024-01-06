@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-
+/* 
 :root {
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
@@ -20,7 +20,6 @@
 }
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -77,3 +76,13 @@ footer .header__title::after {
   border-inline-start: 1px solid var(--text-color);
   border-block-end: 1px solid var(--text-color);
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --bg-color: #FFF1F7;
+    --text-color: #353430;
+    --header-title-color: #FFC2E6;
+    --list-title-color: #353430;
+  }
+} */

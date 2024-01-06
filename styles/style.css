@@ -10,17 +10,17 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header, .footer {
-  /* min-height: 647px;
-  max-height: 1024px; */
+  display: grid;
+  gap: 40px;
 }
 
 .header { 
-  margin: 10px 10px 50px;
+  block-size: 668px;
+  padding: 10px 10px 10px;
   display: grid;
   position: relative;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .decorated-element {
@@ -42,6 +42,8 @@
   height: 25px;
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
+  margin-inline-end: 2.5vi;
+  margin-block-start: 2.7vi;
 }
 
 .decorated-element_corner::after {
@@ -60,6 +62,7 @@
 .header__theme-menu {
   color: var(--accent-color);
   justify-self: end;
+  align-self: center;
 }
 
 .header__theme-menu-button {
@@ -84,7 +87,11 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color);
-  pointer-events: none
+  pointer-events: none;
+}
+
+.header__theme-menu-item:not(:last-child) {
+  padding-block-end: 13px;
 }
 
 .header__title {
@@ -94,7 +101,7 @@
 }
 
 .header .header__title {
-
+  align-self: center;
 }
 
 .header__paragraph {
@@ -118,7 +125,9 @@
   border-block-end: 1px solid var(--accent-color);
   position: absolute;
   left: 0;
-  bottom: 0;  
+  bottom: 0;
+  margin-inline-start: 2.7vi;
+  margin-block-end: 2.5vi;
 }
 
 .list__paragraph a {
@@ -142,12 +151,11 @@
 .content__title {
   color: var(--accent-color);
   font-size: 18px;
-  margin-block-end: 20px;
+  /* padding-block-end: 20px; */
 }
 
 .list__title {
   color: var(--list-title-color);
-  margin-block-end: 10px;
   font-size: 18px;
 }
 
@@ -156,24 +164,26 @@
 }
 
 .content__list li:not(:last-child) {
-  margin-block-end: 20px;
+  padding-block-end: 20px;
 } 
 
-.main_content {
-  margin-inline: 10px;
-  margin-block-end: 50px;
+.content__list li {
+  display: grid;
+  gap: 10px;
 }
 
-.about_focus, .advice {
+.content-section {
+  padding-inline: 10px;
   display: grid;
+  gap: 50px;
 }
 
 .problems {
-  display: grid;
+  /* display: grid; */
 }
 
 .problems .content__title {
-  max-width: 315px;
+  /* max-width: 315px; */
 }
 
 .advice_list .content__list .list__title {
@@ -181,13 +191,13 @@
 }
 
 .advice_list .content__list {
-  margin-block-start: 20px;
+  /* padding-block-start: 20px; */
 }
 
 
 .image-container {
-  display: grid;
-  gap: 10px;
+  /* display: grid; */
+  /* gap: 10px; */
 }
 
 .image-container img {
@@ -220,40 +230,50 @@
 } */
 
 .footer {
-  display: grid;
-  margin-block: 10px;
-  margin-inline: 10px;
-  align-items: center;
+  block-size: 668px;
+  /* display: grid; */
+  /* padding-block: 10px;
+  padding-inline: 10px; */
+  /* align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative; */
 }
 .footer .header__title {
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 footer .header__title::before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  position: absolute;
+  /* content: ''; */
+  /* display: block; */
+  /* width: 25px;
+  height: 25px; */
+  /* border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color); */
+  /* position: absolute;
   right: 0;
-  top: 0;  
+  top: 0;   */
 }
 
 footer .header__title::after {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-  position: absolute;
+  /* content: '';
+  display: block; */
+  /* width: 25px;
+  height: 25px; */
+  /* border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color); */
+  /* position: absolute;
   left: 0;
-  bottom: 0;  
+  bottom: 0;   */
 }
+
+@media (width >= 768px) {          /* надо как то исправить что ьы не писать этот медиазапрос высота секции дожна быть коректной при 100vh*/
+  .header {
+    block-size: 1024px;
+    padding: 20px;
+  } 
+}
+
+
 
 @media (width >= 768px) {
   .image-container {
@@ -289,7 +309,7 @@ footer .header__title::after {
 @media (width >= 768px) {
   .image-container {
 
-    margin-top: 20px;
+    /* padding-top: 20px; */
     max-height: 1048px;
   }
 } 
@@ -302,32 +322,25 @@ footer .header__title::after {
 
 @media (width >= 1024px) {
   .header__theme-menu-list {
-    display: flex;
-    gap: 35px;
+    /* display: flex; */
+    /* gap: 35px; */
   }
   .header__theme-menu {
-    justify-self: center;
-    align-self: flex-start;
-    padding: 0;
-     
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .header__theme-menu {
-  
+    /* justify-self: center;
+    align-self: flex-start; */
+       
   }
 }
 
 @media (width < 1024px) {
   .header__theme-menu-item:not(:last-of-type) {
-  margin-block-end: 13px;
+  /* padding-block-end: 13px; */
 }
 }
 
 @media (width >= 768px) {
   .header { 
-    margin: 20px 20px 20px;
+    /* padding: 20px 20px 20px; */
  }
 }
 
@@ -350,85 +363,66 @@ footer .header__title::after {
 }
 
 @media (width >= 768px) {
- header .header__title {
-
-  }
-}
-
-@media (width >= 1024px) {
- header .header__title {
-
-  }
-}
-
-
-@media (width >= 768px) {
   .main_content {
-    margin-inline: 20px;
-    margin-block-end: 80px;
+    /* padding-inline: 20px; */
+    /* padding-block-end: 80px; */
   }
 }
 
 @media (width >= 768px) {
   .about_focus, .advice {
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    /* grid-template-columns: 1fr 2fr; */
+    /* gap: 10px; */
   }
 }
 
 @media (width >= 1024px) {
   .problems .content__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    /* gap: 20px; */
   }
 }
 
-@media (768px <= width < 1024px) {
+/* @media (768px <= width < 1024px) {
   .problems .content__title {
     max-width: 237px;
   }
-}
-
+} */
+/* 
 @media (768px <= width < 1024px) {
   .header__paragraph {
     width: 364px;
   }
-}
-
-@media (width >= 1024px) {
-  .header__paragraph {
-  
-  }
-}
+} */
 
 @media (width >= 768px) {
   .footer {
-    margin-block: 20px;
-    margin-inline: 20px;
+    /* padding-block: 20px;
+    padding-inline: 20px; */
   }
 }
 
-@media (width >= 768px) {
+/* @media (width >= 768px) {
   .header, .footer {
     min-height: 938px;
   }
-}
+} */
 
-@media (width >= 1024px) {
+/* @media (width >= 1024px) {
   .header, .footer {
     min-height: 727px;
   }
-}
+} */
 
-@media (width >= 768px) {
+/* @media (width >= 768px) {
   .about_focus, .advice {
     gap: 20px;
   }
-}
+} */
 
 @media (width >= 768px) {
   .content-section {
-    margin-block-start: 80px;
+    /* padding-block-start: 80px; */
   }
 }
