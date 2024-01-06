@@ -10,8 +10,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  gap: 40px;
 }
 
 .header { 
@@ -130,6 +128,10 @@
   margin-block-end: 2.5vi;
 }
 
+.about_focus {
+  padding-block-start: 40px;
+}
+
 .list__paragraph a {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -166,9 +168,8 @@
   padding-block-end: 20px;
 } 
 
-.content__list li {
-  display: grid;
-  gap: 10px;
+.list__paragraph {
+  padding-block-start: 10px;
 }
 
 .content-section {
@@ -199,6 +200,7 @@
   display: grid;
   gap: 10px;
   padding-block-start: 10px;
+  padding-block-end: 40px;
 }
 
 .image-container img {
@@ -236,8 +238,9 @@
   padding: 10px;
   align-items: center;
   justify-content: center;
-  /* position: relative; */
+  position: relative;
 }
+
 .footer .header__title {
   text-shadow: 2px 2px 0px var(--accent-color);
 }
@@ -266,11 +269,32 @@ footer .header__title::after {
   bottom: 0;   */
 }
 
-@media (width >= 768px) {          /* надо как то исправить что ьы не писать этот медиазапрос высота секции дожна быть коректной при 100vh*/
+@media (width >= 768px) { 
   .header {
-    block-size: 1024px;
     padding: 20px;
   } 
+
+  .about_focus {
+    padding-block-start: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .advice {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .content-section {
+    padding-inline: 20px;
+    gap: 80px;                                       /* попробовать сделать падднги в процентах*/
+  }
+
+  .footer {
+    padding: 20px;
+  }
 }
 
 
@@ -369,13 +393,6 @@ footer .header__title::after {
   }
 }
 
-@media (width >= 768px) {
-  .about_focus, .advice {
-    /* grid-template-columns: 1fr 2fr; */
-    /* gap: 10px; */
-  }
-}
-
 @media (width >= 1024px) {
   .problems .content__list {
     /* display: grid;
@@ -384,17 +401,17 @@ footer .header__title::after {
   }
 }
 
-/* @media (768px <= width < 1024px) {
+@media (768px <= width < 1024px) {
   .problems .content__title {
     max-width: 237px;
   }
-} */
-/* 
+}
+
 @media (768px <= width < 1024px) {
   .header__paragraph {
     width: 364px;
   }
-} */
+}
 
 @media (width >= 768px) {
   .footer {
@@ -420,9 +437,3 @@ footer .header__title::after {
     gap: 20px;
   }
 } */
-
-@media (width >= 768px) {
-  .content-section {
-    /* padding-block-start: 80px; */
-  }
-}
