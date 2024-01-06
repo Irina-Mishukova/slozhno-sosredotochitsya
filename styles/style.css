@@ -257,6 +257,10 @@ footer .header__title::after {
     padding: 20px;
   } 
 
+  .header .header__title {
+    margin-inline-start: -20px;
+  }
+
   .about_focus {
     padding-block-start: 60px;
     display: grid;
