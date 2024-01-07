@@ -40,8 +40,8 @@
   height: 25px;
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
-  margin-inline-end: 2.5vi;
-  margin-block-start: 2.7vi;
+  margin-inline-end: 2.5dvi;
+  margin-block-start: 2.7dvi;
 }
 
 .decorated-element_corner::after {
