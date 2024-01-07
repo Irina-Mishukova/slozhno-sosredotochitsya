@@ -38,8 +38,8 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--corner-color);
+  border-inline-end: 1px solid var(--corner-color);
   margin-inline-end: 2.5dvi;
   margin-block-start: 2.7dvi;
 }
@@ -113,6 +113,7 @@
   align-self: center;
   line-height: 130% ;
   font-weight: 700;
+  color: var(--list-title-color);
 }
 
 .title-decor {
@@ -124,8 +125,8 @@
   display: block;
   width: 25px;
   height: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--corner-color);
+  border-block-end: 1px solid var(--corner-color);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -227,8 +228,8 @@ footer .header__title::before {
   display: block;
   width: 25px;
   height: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--corner-color);
+  border-block-start: 1px solid var(--corner-color);
   position: absolute;
   right: 0;
   top: 0; 
@@ -241,8 +242,8 @@ footer .header__title::after {
   display: block;
   width: 25px;
   height: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--corner-color);
+  border-block-end: 1px solid var(--corner-color);
   position: absolute;
   left: 0;
   bottom: 0;
