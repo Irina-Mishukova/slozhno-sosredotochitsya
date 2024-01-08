@@ -11,7 +11,7 @@
   background-size: cover;
 }
 
-.header { 
+.header {
   block-size: 100vh;
   padding: 10px 10px 10px;
   display: grid;
@@ -228,7 +228,7 @@ footer .header__title::before {
   border-block-start: 1px solid var(--corner-color);
   position: absolute;
   right: 0;
-  top: 0; 
+  top: 0;
   margin-inline-end: 3vi;
   margin-block-start: 3vi;
 }
@@ -271,7 +271,7 @@ footer .header__title::after {
   }
 }
 
-@media (width >= 768px) { 
+@media (width >= 768px) {
   .header {
     padding: 20px;
   } 
@@ -296,7 +296,8 @@ footer .header__title::after {
   .content-section {
     padding-inline: 20px;
     gap: 80px;
-    padding-block-end: 60px;                                  
+    padding-block-end: 60px;
+
   }
 
   .footer {
