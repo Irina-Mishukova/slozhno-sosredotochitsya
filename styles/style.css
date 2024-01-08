@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
   background-color: var(--bg-color);
   line-height: 130%;
   background-image: url(../images/cover-image-dark.png);
@@ -168,15 +167,12 @@
 
 .list__paragraph {
   color: var(--text-color);
+  padding-block-start: 10px;
 }
 
 .content__list li:not(:last-child) {
   padding-block-end: 20px;
 } 
-
-.list__paragraph {
-  padding-block-start: 10px;
-}
 
 .content-section {
   padding-inline: 10px;
@@ -346,7 +342,7 @@ footer .header__title::after {
   }
   .header__theme-menu {
     justify-self: center;
-    align-self: flex-start;     
+    align-self: flex-start;
   }
 
   .about_focus {
