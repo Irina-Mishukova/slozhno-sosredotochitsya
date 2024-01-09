@@ -12,11 +12,12 @@
 
 .header {
   block-size: 100vh;
-  padding: 10px 10px 10px;
+  padding: 10px;
   display: grid;
   position: relative;
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr;
+  min-height: 668px;
 }
 
 .decorated-element {
@@ -49,7 +50,7 @@
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 100%;
-  box-shadow: 0px 0px 3px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
   left: 7px;
   top: -2px;
   position: relative;
@@ -212,6 +213,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 668px;
 }
 
 .footer .header__title {
