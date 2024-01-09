@@ -17,23 +17,3 @@
   --corner-color: #ff0070;
   background-image: url(../images/cover-image-dark.png);
 }
-
-:root.theme_dark {
-  --accent-color: #ff0070;
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --header-title-color: #DB00FF;
-  --list-title-color: #000028;
-  --corner-color: #ff0070;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --header-title-color: #DB00FF;
-    --list-title-color: #000028;
-    --corner-color: #ff0070;
-  }
-}
