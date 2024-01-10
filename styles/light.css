@@ -27,7 +27,7 @@
   --corner-color: #353430;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
     --bg-color: #FFF1F7;
@@ -36,4 +36,4 @@
     --list-title-color: #353430;
     --corner-color: #353430;
   }
-}
+} */
