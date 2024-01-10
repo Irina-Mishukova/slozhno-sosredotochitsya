@@ -65,16 +65,23 @@
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  line-height: 33%;
   text-align: center;
+  padding: 0px 12px 0px;
 }
+
+
+
+
+
+
+
 
 .header__theme-menu-button:focus {
   outline: none;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid rgba(255, 0, 112, 0.40);
   cursor: pointer;
 }
 
@@ -84,7 +91,6 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color);
-  outline-offset: 7px;
   pointer-events: none;
 }
 
@@ -93,7 +99,7 @@
 }
 
 .header__theme-menu-item {
-  padding-inline-end: 7px;
+  padding-inline-end: 2px;
 }
 
 .header__title, .footer__title {
@@ -152,7 +158,7 @@
 }
 
 .list__paragraph a:focus-visible {
-  border: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
 
 .content__title {
