@@ -22,10 +22,24 @@
 }
 
 .decorated-element {
+  /* display: block; */
   color: var(--accent-color);
   position: absolute;
-  top: 0%;
-  right: 0%;
+  right: clamp(38px, 38px, 38px);
+  top: clamp(10px,10px, 10px);
+}
+
+.decorated-element::after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  /* left: 7px;
+  top: -2px;
+  position: relative; */
 }
 
 .decorated-zone::after {
@@ -36,16 +50,9 @@
   border-inline-start: 1px solid var(--corner-color);
   border-block-end: 1px solid var(--corner-color);
   position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-inline-start: 2.7vi;
-  margin-block-end: 2.5vi;
+  left: clamp(10px,10px, 20px);
+  bottom: clamp(10px,10px, 20px);
 }
-
-/* .decorated-element_text {
-  position: relative;
-  left: 7px;
-}  */
 
 .decorated-zone::before {
   position: absolute;
@@ -56,24 +63,9 @@
   height: 25px;
   border-block-start: 1px solid var(--corner-color);
   border-inline-end: 1px solid var(--corner-color);
-  right: 0;
-  top: 0;
-  margin-inline-end: 2.5dvi;
-  margin-block-start: 2.7dvi;
+  right: clamp(10px, 10px, 20px);
+  top: clamp(10px,10px, 20px);
 }
-
-/* .decorated-element_corner::after {
-  content: '';
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  background-color: var(--accent-color);
-  border-radius: 100%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
-  left: 7px;
-  top: -2px;
-  position: relative;
-}  */
 
 .header__theme-menu {
   color: var(--accent-color);
@@ -219,34 +211,6 @@
   position: relative;
   min-height: 668px;
 }
-
-/* .footer__title::before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-inline-end: 1px solid var(--corner-color);
-  border-block-start: 1px solid var(--corner-color);
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-inline-end: 3vi;
-  margin-block-start: 3vi;
-}
-
-.footer__title::after {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 25px;
-  border-inline-start: 1px solid var(--corner-color);
-  border-block-end: 1px solid var(--corner-color);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-inline-start: 3vi;
-  margin-block-end: 3vi;
-} */
 
 @media (width < 768px) {
   .header__title, .footer__title {
