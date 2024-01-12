@@ -22,6 +22,22 @@
   display: block;
 }
 
+.page.theme_dark .header__theme-menu {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.page.theme_dark .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     background-image: url(../images/cover-image-dark.png);
