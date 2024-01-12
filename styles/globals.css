@@ -10,6 +10,8 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-size: 18px;
+  font-family:'IBM Plex mono', serif;
 }
 
 h1,
@@ -39,9 +41,4 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-.page {
-  font-size: 18px;
-  font-family:'IBM Plex mono', serif;
 }
