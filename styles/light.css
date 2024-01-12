@@ -18,6 +18,10 @@
   background-image: url(../images/cover-image-light.png);
 }
 
+.page.theme_light .decorated-element {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
@@ -31,12 +35,7 @@
     background-image: url(../images/cover-image-light.png);
   }
 
-  /* .decorated-element {
+  .decorated-element {
     display: none;
-  } */
+  }
 }
-
-
-/* .decorated-element {
-  display: none;
-} */

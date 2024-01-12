@@ -18,12 +18,12 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
+.page.theme_dark .decorated-element {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     background-image: url(../images/cover-image-dark.png);
   }
 }
-
-/* .decorated-element {
-  display: block;
-} */
