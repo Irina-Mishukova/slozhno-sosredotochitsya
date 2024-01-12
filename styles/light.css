@@ -38,6 +38,10 @@
   outline: 1px solid var(--text-color);
 }
 
+.page.theme_light .content__title {
+  color: var(--text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
@@ -69,5 +73,9 @@
   
   .header__theme-menu-button_active {
     outline: 1px solid var(--text-color);
+  }
+
+  .content__title {
+    color: var(--text-color);
   }
 }

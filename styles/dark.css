@@ -38,6 +38,10 @@
   outline: 1px solid var(--accent-color);
 }
 
+.page.theme_dark .content__title {
+  color: var(--accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     background-image: url(../images/cover-image-dark.png);
