@@ -219,24 +219,25 @@
 }
 
 @media (width >= 768px) {
+  .decorated-zone::before {
+    margin-inline-end: 20px;
+    margin-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    margin-inline-start: 20px;
+    margin-block-end: 20px;
+  }
+
+  .decorated-element {
+    margin-inline-end: 30px;
+    margin-block-start: 20px;
+  }
+
   .header__title, .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-}
 
-@media (width >= 1024px) {
-  .header__title, .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .header__paragraph {
-    width: 364px;
-  }
-}
-
-@media (width >= 768px) {
   .header {
     padding: 20px;
   } 
@@ -262,27 +263,6 @@
     padding-inline: 20px;
     gap: 80px;
     padding-block-end: 60px;
-  }
-
-  .footer {
-    padding: 20px;
-  }
-}
-
-@media (width >= 768px) {
-  .decorated-zone::before {
-    margin-inline-end: 20px;
-    margin-block-start: 20px;
-  }
-
-  .decorated-zone::after {
-    margin-inline-start: 20px;
-    margin-block-end: 20px;
-  }
-
-  .decorated-element {
-    margin-inline-end: 30px;
-    margin-block-start: 20px;
   }
 
   .image-container {
@@ -313,9 +293,16 @@
     grid-row-end: span 2;
     grid-column-start: 3;
   }
+
+  .footer {
+    padding: 20px;
+  }
 }
 
 @media (width >= 1024px) {
+  .header__title, .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   .header__theme-menu-list {
     display: flex;
     gap: 11px;
@@ -344,6 +331,10 @@
 }
 
 @media (768px <= width < 1024px) {
+  .header__paragraph {
+    width: 364px;
+  }
+
   .problems .content__title {
     max-width: 237px;
   }
