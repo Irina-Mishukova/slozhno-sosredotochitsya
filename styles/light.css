@@ -15,6 +15,7 @@
   --header-title-color: #FFC2E6;
   --list-title-color: #353430;
   --corner-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.40);
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -27,7 +28,7 @@
 }
 
 .page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.40);
+  outline: 1px solid var(--hover-color);
 }
 
 .page.theme_light .header__theme-menu-button:focus-visible {
@@ -50,6 +51,7 @@
     --header-title-color: #FFC2E6;
     --list-title-color: #353430;
     --corner-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.40);
   }
   .page {
     background-image: url(../images/cover-image-light.png);
@@ -64,7 +66,7 @@
   }
   
   .header__theme-menu-button:hover {
-    outline: 1px solid rgba(50, 49, 45, 0.40);
+    outline: 1px solid var(--hover-color);
   }
   
   .header__theme-menu-button:focus-visible {

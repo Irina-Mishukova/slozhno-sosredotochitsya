@@ -15,6 +15,7 @@
   --header-title-color: #DB00FF;
   --list-title-color: #000028;
   --corner-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.40);
   background-image: url(../images/cover-image-dark.png);
 }
 
@@ -27,7 +28,7 @@
 }
 
 .page.theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.40);
+  outline: 1px solid var(--hover-color);
 }
 
 .page.theme_dark .header__theme-menu-button:focus-visible {
