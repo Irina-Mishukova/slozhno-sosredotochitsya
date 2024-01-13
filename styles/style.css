@@ -42,7 +42,6 @@
 .decorated-zone::before {
   position: absolute;
   content: '';
-  color: var(--accent-color);
   display: block;
   width: 25px;
   height: 25px;
