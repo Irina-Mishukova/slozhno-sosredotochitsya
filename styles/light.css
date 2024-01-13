@@ -16,7 +16,7 @@
   --list-title-color: #353430;
   --corner-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.40);
-  background-image: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .decorated-element {
@@ -52,9 +52,10 @@
     --list-title-color: #353430;
     --corner-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.40);
+    --background-image: url(../images/cover-image-light.png);
   }
   .page {
-    background-image: url(../images/cover-image-light.png);
+    background-image: var(--background-image);
   }
 
   .decorated-element {

@@ -16,7 +16,7 @@
   --list-title-color: #000028;
   --corner-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.40);
-  background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark .decorated-element {
@@ -45,6 +45,6 @@
 
 @media (prefers-color-scheme: dark) {
   .page {
-    background-image: url(../images/cover-image-dark.png);
+    background-image: var(--background-image);
   }
 }
